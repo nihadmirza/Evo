@@ -8,10 +8,12 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class UpdateStudentDto {
 
     String name;
     String surname;
     String  address;
     String  phoneNumber;
+
 }

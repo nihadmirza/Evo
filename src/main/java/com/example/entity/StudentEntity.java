@@ -12,7 +12,6 @@ import lombok.experimental.FieldDefaults;
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 
-
 public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,8 +28,5 @@ public class StudentEntity {
 
     @Column(nullable = false, name ="phone_number")
     String  phoneNumber;
-
-
-
 
 }

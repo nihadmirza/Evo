@@ -1,14 +1,11 @@
 package com.example.service;
 
-
 import com.example.dto.teacher.CreateTeacherDto;
 import com.example.dto.teacher.TeacherDto;
 import com.example.dto.teacher.UpdateTeacherDto;
-
 import java.util.List;
 
 public interface TeacherService {
-
 
       TeacherDto createTeacher(CreateTeacherDto teacherDto);
 
@@ -19,4 +16,5 @@ public interface TeacherService {
       TeacherDto update(Long id, UpdateTeacherDto teacherDto);
 
       TeacherDto delete(Long id);
+
 }

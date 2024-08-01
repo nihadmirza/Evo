@@ -12,7 +12,6 @@ import lombok.experimental.FieldDefaults;
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 
-
 public class TeacherEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +25,5 @@ public class TeacherEntity {
 
     @Column(nullable = false, name ="lesson_count")
     Integer lessonCount;
-
 
 }

@@ -9,6 +9,7 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class StudentDto {
 
     Long id;
@@ -16,4 +17,5 @@ public class StudentDto {
     String surname;
     String  address;
     String  phoneNumber;
+
 }

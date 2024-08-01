@@ -1,18 +1,19 @@
 package com.example.entity;
 
 import jakarta.persistence.*;
- import lombok.*;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
- import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-
 import java.time.LocalDateTime;
- @FieldDefaults(level = AccessLevel.PRIVATE)
+
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @Setter
 @Getter
 @Entity
 @NoArgsConstructor
 @Table(name = "lesson")
+
 public class LessonEntity {
 
     @Id
