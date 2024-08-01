@@ -77,7 +77,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(Exception.class)
     public ErrorResponce handleException(Exception exception,
-                                                     HttpServletRequest request) {
+                                         HttpServletRequest request) {
         return  ErrorResponce.builder()
                 .message("Something went wrong")
                 .timestamp(LocalDateTime.now())
